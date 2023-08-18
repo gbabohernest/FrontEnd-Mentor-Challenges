@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(185, 75%, 39%);
+  margin: 0 auto;
+  font-family: sniglet;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+span {
+  color: hsl(227, 10%, 46%);
+  font-weight: lighter;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.out-top {
+  width: 50%;
+  background: url("./images/bg-pattern-top.svg") no-repeat;
+  background-size: cover;
+  background-position: 100% -400px;
+}
+
+.out-bottom {
+  width: 50%;
+  background: url("./images/bg-pattern-bottom.svg") no repeat;
+  background-size: cover;
+  background-position: 0px 400px;
+}
+
+.main-section-card {
+  background: #fff;
+  position: absolute;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  margin-top: -180px;
+  margin-left: -175px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-main {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-main img {
+  border-radius: 100%;
+  border: 5px solid #fff;
+  margin-top: -18%;
+  padding: 0px;
+  background: #fff;
+}
+
+.card-main span {
+  margin: auto;
+  margin-top: -0.9px;
+  font-size: 0.9em;
+}
+
+.card-footer {
+  height: 80px;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid darkgray;
+  text-align: center;
+}
+
+.card-footer-titles {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  font-weight: 600px;
+}
+
+.card-footer-titles span {
+  font-size: 0.6em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@media only screen and(max-width: 400px) {
+  .body-container {
+    width: 320px;
+    display: flex;
+    margin-left: -160px;
+  }
+}
