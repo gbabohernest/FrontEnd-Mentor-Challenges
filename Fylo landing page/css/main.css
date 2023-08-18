@@ -1,0 +1,270 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+html body {
+  background: #181f2a;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+/* title section */
+#title {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  background-color: #1c2431;
+  color: #fff;
+  background-image: url(../images/bg-curvy-desktop.svg) no-repeat;
+  background-position: bottom;
+}
+.container-fluid {
+  padding: 0 auto;
+}
+.main-logo {
+  font-size: 1rem;
+}
+.nav-item {
+  margin: 1rem;
+  text-align: center;
+}
+
+.title-info {
+  margin: 5% 0%;
+}
+
+.title-heading {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: left;
+}
+.title-paragraph {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0.3rem 0 4rem;
+}
+
+.title-btn {
+  background: linear-gradient(to right, #65e2d9 0%, #339ecc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  color: #fff;
+  font-weight: 700;
+  font-family: monospace;
+  font-family: "Open Sans";
+  width: 50%;
+}
+
+.title-info .title-text {
+  text-align: left;
+  margin-top: 8%;
+  padding: 1%;
+}
+/* title section ends */
+
+/* features section  */
+#features {
+  text-align: center;
+  padding: 5% 15%;
+}
+
+.features-img {
+  margin-bottom: 20px;
+  height: 78px;
+}
+
+.features-header {
+  font-family: "Raleway-bold", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#features p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.3rem 2rem 4rem;
+}
+/* end of features section */
+
+/* testimonial section */
+.testimonial-wrapper {
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+.row .testimonial-title {
+  text-align: left;
+  margin-top: 8%;
+}
+
+.testimonial-paragraph {
+  font-size: 1.05rem;
+}
+
+.testimonial-h1 {
+  color: #65e2d9;
+  border-bottom: 1px solid;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+.testimonial-h1:hover {
+  text-decoration: none;
+  color: purple;
+}
+
+/* cards */
+
+.testimonial-cards {
+  padding: 1% 4%;
+}
+
+.three-cards .inner-test-card {
+  background-color: #1c2431;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.card-text {
+  margin-bottom: 2rem;
+}
+
+.images-card {
+  width: 20%;
+  float: left;
+}
+
+.card-head h6 {
+  font-size: 0.75rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.card-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 3rem;
+  padding: 0.7rem;
+}
+
+.card-head p {
+  font-size: 0.75rem;
+}
+/* end of testimonial section */
+
+/* getEverthingCard Section */
+.obc {
+  background: linear-gradient(180deg, #181f2a 60%, #0b1523 60%);
+}
+
+.obc-card {
+  background-color: #1c2431;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.obs-header {
+  font-family: "Raleway-bold", sans-serif;
+  font-weight: 400;
+}
+
+.obc-p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.mail-4-card {
+  border: none;
+  border-radius: 32px;
+  padding: 1rem;
+  margin: 0 auto;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.mail-4-card:focus {
+  outline: none;
+}
+
+.btn-custom {
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Raleway-black", sans-serif;
+  color: #fff;
+  border-radius: 32px;
+  border: hidden;
+  background-image: linear-gradient(to right, #65e2d9 0%, #339ecc 100%);
+  margin: 0 auto;
+}
+/* end of getEverthing Card Section */
+
+/* footer */
+#footer {
+  background-color: #0b1523;
+  padding: 2rem 0;
+}
+
+.footer-logo {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.images_footer {
+  float: left;
+  margin-top: 0.3rem;
+}
+
+.footer-p {
+  margin-left: 2rem;
+}
+
+.footer_ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_li {
+  margin: 0 0.5rem 0.5rem;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons {
+  margin: auto 0.5rem;
+  font-size: 1.5rem;
+}
+
+.footer_icons {
+  text-align: center;
+}
+
+.footer_icons a {
+  text-decoration: none;
+}
+
+.footer-section {
+  margin-bottom: 1rem;
+}
+.author-info {
+  text-align: center;
+  padding: 1rem;
+  font-family: "Raleway-black", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.author-info a {
+  text-decoration: none;
+  color: #339ecc;
+}
