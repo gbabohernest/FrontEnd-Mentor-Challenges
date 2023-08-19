@@ -1,0 +1,182 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.3;
+  font-family: 'Karla', sans-serif;
+  color: var(--grayblue);
+  background-color: var(--lt-gray);
+  padding: var(--paddingX);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 0;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(179, 61%, 44%);
+  --lytcyan: hsl(179, 47%, 52%);
+  --yellow: hsl(71, 73%, 54%);
+  --lt-gray: hsl(204, 43%, 93%);
+  --grayblue: hsl(218, 22%, 67%);
+  --paddingX: 1.8rem;
+  --paddingY: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  font-weight: bold;
+  line-height: 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+.price {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 40rem;
+  margin: 2.5% auto;
+}
+
+@media only screen and (min-width: 62.5em) {
+  /* min-width means from here upward apply this style.  */
+  .price {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas:
+      'community community'
+      'subscription why-us';
+  }
+
+  .community {
+    grid-area: community;
+  }
+
+  .subscription {
+    grid-area: subscription;
+  }
+  .why {
+    grid-area: why-us;
+  }
+}
+
+.price > * {
+  padding: var(--paddingX) var(--paddingY);
+}
+
+/* community block styles  */
+.community {
+  background-color: var(--white);
+}
+
+.community h2 {
+  font-size: 1.25rem;
+  color: var(--cyan);
+  /* font-weight: bold; */
+}
+
+.community .subtitle {
+  font-size: 1rem;
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+.subtitle {
+  line-height: 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+.community p {
+  font-size: 0.85rem;
+  line-height: 1.75rem;
+  margin-bottom: 0;
+}
+
+/* end  */
+
+/* subscription styles */
+
+.subscription,
+.why {
+  color: var(--lt-gray);
+}
+
+.subscription {
+  background-color: var(--cyan);
+}
+
+.subscription__price {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.subscription__price span {
+  font-size: 1rem;
+  margin-left: 0.8rem;
+  font-weight: normal;
+  opacity: 0.75;
+}
+
+.subscription p {
+  font-size: 0.9rem;
+  margin-bottom: 1.75rem;
+}
+
+.subscription a {
+  display: block;
+  background-color: var(--yellow);
+  color: var(--white);
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+/* end */
+
+/* why block styles */
+
+.why {
+  background-color: var(--lytcyan);
+}
+
+.why ul li {
+  list-style: none;
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+footer a {
+  color: #000;
+}
