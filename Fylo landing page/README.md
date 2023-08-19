@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [fylo landing page](https://fem-fylo-home-page.vercel.app/)
 
 ## My process
 
@@ -42,5 +42,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@gbabohernest](https://www.frontendmentor.io/profile/gbabohernest)
+- Twitter - [@gbaboh_dev](https://twitter.com/gbaboh_dev)
