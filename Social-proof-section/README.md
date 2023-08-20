@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [social-proof-section](https://social-proof-section-fem.netlify.app/)
+- Live Site URL: [social-proof-section](https://social-section-fem.netlify.app/)
 
 ## My process
 
