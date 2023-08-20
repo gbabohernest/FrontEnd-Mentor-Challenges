@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="scss/dist/css/main.min.css" />
+    <title>Frontend Mentor | Loopstudios landing page</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-img">
+      <img
+        src="images/desktop/desktop-image-hero.jpg"
+        class="bg-desktop bg"
+        alt="a girl driving a racecar"
+      />
+      <img
+        src="images/mobile/mobile-image-hero.jpg"
+        class="mobile-bg bg"
+        alt="a girl driving a racecar"
+      />
+      <nav class="center-items nav">
+        <img src="images/logo.svg" alt="Loop_studios logo" />
+        <ul class="nav__list hide-for-mobile">
+          <li class="nav__list-items">About</li>
+          <li class="nav__list-items">Careers</li>
+          <li class="nav__list-items">Events</li>
+          <li class="nav__list-items">Products</li>
+          <li class="nav__list-items">Support</li>
+        </ul>
+
+        <div class="mobile-nav">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
+
+        <div class="nav__hamburger">
+          <img src="images/icon-hamburger.svg" alt="hamburger open icon" />
+          <img
+            src="images/icon-close.svg"
+            class="nav__hamburger-close"
+            alt="hamburger close icon"
+          />
+        </div>
+      </nav>
+      <div class="header-heading center-items">
+        <h1>Immersive experiences that deliver</h1>
+      </div>
+    </header>
+
+    <main class="center-items">
+      <section class="virtual-reality">
+        <div class="virtual-reality__img-container">
+          <img
+            src="images/mobile/image-interactive.jpg"
+            alt=""
+            class="virtual-reality__img-container-mobile-img"
+          />
+          <img
+            src="images/desktop/image-interactive.jpg"
+            alt=""
+            class="virtual-reality__img-container-desktop-img"
+          />
+        </div>
+        <div class="virtual-reality__heading">
+          <h2>The leader in interactive VR</h2>
+          <p>
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+
+      <section class="creations">
+        <div class="creations-flex">
+          <h3>Our creations</h3>
+
+          <a href="#" class="desktop-see-all-btn">See all</a>
+        </div>
+
+        <div class="creations-grid">
+          <div class="creations-grid__items earth">
+            <img
+              src="images/mobile/image-deep-earth.jpg"
+              alt="a picture of earth"
+              class="mobile-img"
+            />
+            <img
+              src="images/desktop/image-deep-earth.jpg"
+              alt="a picture of earth"
+              class="desktop-img"
+            />
+            <h4>Deep <br />earth</h4>
+          </div>
+          <div class="creations-grid__items arcade">
+            <img
+              src="images/mobile/image-night-arcade.jpg"
+              alt="a picture of an arcade"
+              class="mobile-img"
+            />
+            <img
+              src="images/desktop/image-night-arcade.jpg"
+              alt="a picture of an arcade"
+              class="desktop-img"
+            />
+            <h4>Night <br />arcade</h4>
+          </div>
+          <div class="creations-grid__items soccer">
+            <img
+              src="images/mobile/image-soccer-team.jpg"
+              alt="a picture of a soccer player in action"
+              class="mobile-img"
+            />
+            <img
+              src="images/desktop/image-soccer-team.jpg"
+              alt="a picture of a soccer player in action"
+              class="desktop-img"
+            />
+            <h4>Soccer <br />team VR</h4>
+          </div>
+          <div class="creations-grid__items car">
+            <img
+              src="images/mobile/image-grid.jpg"
+              alt="a picture of a nice car"
+              class="mobile-img"
+            />
+            <img
+              src="images/desktop/image-grid.jpg"
+              alt="a picture of a nice car"
+              class="desktop-img"
+            />
+            <h4>The <br />grid</h4>
+          </div>
+          <!-- top grid end -->
+
+          <!-- ------------------------------------------------------------------------------------- -->
+
+          <div class="creations-grid__items above">
+            <img
+              src="images/mobile/image-from-above.jpg"
+              alt="an image from above"
+              class="mobile-img"
+            />
+            <img
+              src="images/desktop/image-from-above.jpg"
+              alt="an image from above"
+              class="desktop-img"
+            />
+            <h4>From up <br />above VR</h4>
+          </div>
+
+          <div class="creations-grid__items Pocket">
+            <img
+              src="images/mobile/image-pocket-borealis.jpg"
+              alt="a picture of a borealis"
+              class="mobile-img"
+            />
+            <img
+              src="images/desktop/image-pocket-borealis.jpg"
+              alt="a picture of a borealis"
+              class="desktop-img"
+            />
+            <h4>Pocket <br />borealis</h4>
+          </div>
+          <div class="creations-grid__items curiosity">
+            <img
+              src="images/mobile/image-curiosity.jpg"
+              alt="image of a tower light"
+              class="mobile-img"
+            />
+            <img
+              src="images/desktop/image-curiosity.jpg"
+              alt="image of a tower light"
+              class="desktop-img"
+            />
+            <h4>The <br />curiosity</h4>
+          </div>
+          <div class="creations-grid__items fisheye">
+            <img
+              src="images/mobile/image-fisheye.jpg"
+              alt="a picture of a fisheye"
+              class="mobile-img"
+            />
+            <img
+              src="images/desktop/image-fisheye.jpg"
+              alt="a picture of a fisheye"
+              class="desktop-img"
+            />
+            <h4>Make it <br />fisheye</h4>
+          </div>
+        </div>
+        <a href="#" class="mobile-see-all-btn">See all</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="nav-footer center-items">
+        <div class="nav-footer__grid">
+          <div class="left-items">
+            <img
+              src="images/logo.svg"
+              alt="Loop_studios logo"
+              class="footer-logo"
+            />
+
+            <div class="list">
+              <ul class="nav-footer__grid-list">
+                <li class="nav-footer__grid-list-items">About</li>
+                <li class="nav-footer__grid-list-items">Careers</li>
+                <li class="nav-footer__grid-list-items">Events</li>
+                <li class="nav-footer__grid-list-items">Products</li>
+                <li class="nav-footer__grid-list-items">Support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="right-items">
+            <div class="nav-footer__grid-social-links">
+              <img src="images/icon-facebook.svg" alt="facebook icon" />
+              <img src="images/icon-twitter.svg" alt="twitter icon" />
+              <img src="images/icon-pinterest.svg" alt="pinterest icon" />
+              <img src="images/icon-instagram.svg" alt="instagram icon" />
+            </div>
+
+            <p class="footer-copyright">
+              &copy;2021 Loopstudios.All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/gbabohernest" target="_blank"
+          >Ernest Push Gbaboh</a
+        >.
+      </div>
+    </footer>
+
+    <script src="sandbox.js"></script>
+  </body>
+</html>
