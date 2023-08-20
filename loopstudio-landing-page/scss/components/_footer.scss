@@ -1,0 +1,72 @@
+@use "../utils/" as u;
+footer {
+  margin-top: u.rem(80);
+  padding-bottom: u.rem(15);
+  background-color: var(--Black);
+  color: var(--White);
+
+  .attribution {
+    margin-top: u.rem(20);
+
+    a {
+      color: var(--Dark-Gray);
+    }
+  }
+}
+
+.nav-footer {
+  padding-top: u.rem(46);
+  text-align: center;
+
+  @include u.breakpoints-up(large) {
+    text-align: left;
+  }
+
+  &__grid {
+    .list {
+      margin-top: u.rem(30);
+
+      @include u.breakpoints-up(large) {
+        margin-top: u.rem(22);
+      }
+
+      ul {
+        li {
+          &:not(:last-child) {
+            padding-bottom: u.rem(20);
+
+            @include u.breakpoints-up(large) {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &-social-links {
+      margin-top: u.rem(30);
+      cursor: pointer;
+
+      @include u.breakpoints-up(large) {
+        margin-top: 0;
+        margin-left: 100px;
+      }
+
+      img {
+        &:not(:last-child) {
+          padding-right: u.rem(17);
+        }
+      }
+    }
+
+    .footer-copyright {
+      color: var(--Very-Dark-Gray);
+      margin-top: u.rem(7);
+      padding: 0;
+
+      @include u.breakpoints-up(large) {
+        margin-top: u.rem(22);
+      }
+    }
+  }
+}
