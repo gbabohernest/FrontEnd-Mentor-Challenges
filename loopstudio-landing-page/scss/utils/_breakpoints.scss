@@ -1,0 +1,30 @@
+@use "functions" as f;
+
+$breakpoints-up: (
+  "large": f.em(865),
+  "x-large": f.em(988),
+  "xx-large": f.em(1386),
+);
+$breakpoints-down: (
+  "small": f.em(498),
+  "medium": f.em(864),
+);
+
+@mixin breakpoints-up($size) {
+  @media screen and (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoints-down($size) {
+  @media screen and (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+@mixin flex($flex-direction, $space-between) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $space-between;
+  align-items: center;
+}
