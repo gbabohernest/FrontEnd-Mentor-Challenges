@@ -1,0 +1,245 @@
+html {
+    font-size: 0.9375rem;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+    --font: "Spartan", sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    line-height: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--very-dark-magenta);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: var(--light-grayish-magenta);
+    font-size: 0.857rem;
+    line-height: 1rem;
+}
+
+h5 {
+    color: var(--soft-pink);
+    font-size: 0.75rem;
+    font-weight: bold;
+    opacity: 0.33;
+}
+
+@media screen and (min-width: 12.5rem) and (max-width: 64.1875rem ) {
+    body {
+        background-image: url("/images/bg-pattern-top-mobile.svg");
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .heading-top p {
+        text-align: center;
+    }
+
+    .bottom-reviews {
+        background-image: url("/images/bg-pattern-bottom-mobile.svg");
+        background-repeat: no-repeat;
+    }
+
+    .rating-text {
+        font-size: 0.809rem;
+    }
+}
+
+@media screen and (min-width: 64.25rem) {
+    body {
+        background-image: url("/images/bg-pattern-top-desktop.svg");
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .top-ratings {
+        margin-top: 5%;
+        grid-template-columns: 27.3125rem 1fr;
+        gap: 10px;
+    }
+
+    .right-top-ratings {
+        margin-top: 3.125rem;
+        width: 100%;
+        margin-left: 7.75rem;
+    }
+
+    .customer-rating {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .rating-img {
+        padding: .7rem;
+    }
+
+    .rating-text {
+        font-size: .899rem;
+        text-align: center;
+        padding-right: 0.3rem;
+    }
+
+    .rating-2 {
+        margin-left: 2rem;
+    }
+
+    .rating-3 {
+        margin-left: 5rem;
+    }
+
+    .bottom-reviews {
+        background-image: url("/images/bg-pattern-bottom-desktop.svg");
+        background-repeat: no-repeat;
+    }
+
+    .bottom-reviews {
+        margin-top: 5%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-bottom: 2%;
+    }
+
+    .review-card {
+        height: 14.925rem;
+    }
+
+    .card-two {
+        margin-top: 0.8rem;
+    }
+
+    .card-three {
+        margin-top: 1.7rem;
+    }
+}
+
+/*media queries end*/
+
+
+main.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.heading-top {
+    margin-top: 3.125rem;
+}
+
+.heading-top p {
+    color: var(--dark-grayish-magenta);
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: -1px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.top-ratings {
+    display: grid;
+}
+
+.customer-rating {
+    background-color: var(--light-grayish-magenta);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
+
+.rating-img img {
+    margin-right: 0.4rem;
+    text-align: center;
+}
+
+.rating-text {
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.review-card {
+    background-color: var(--very-dark-magenta);
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    padding: 2.5rem 1.9375rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.review-card p {
+    margin-top: 0.625rem;
+    font-size: 0.725rem;
+    line-height: 1.59375rem;
+    opacity: 0.7;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile img {
+    width: 3.125rem;
+    height: auto;
+    border-radius: 100%;
+}
+
+.bio {
+    margin-left: 1.5rem;
+}
+
+.bottom-reviews {
+    margin-top: 1.375rem;
+    display: grid;
+}
+
+footer.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+footer .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
