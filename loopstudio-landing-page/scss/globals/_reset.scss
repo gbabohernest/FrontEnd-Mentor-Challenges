@@ -1,0 +1,43 @@
+@use '../utils/' as u;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: u.rem(15);
+  font-family: var(--font-family-1);
+}
+
+.center-items {
+  width: min(100% - u.rem(40), u.rem(1100));
+  margin-inline: auto;
+}
+
+ul {
+  cursor: pointer;
+  li {
+    @include u.breakpoints-up(large) {
+      &:hover {
+        &::after {
+          content: '';
+          display: block;
+          margin-inline: auto;
+          width: 50%;
+          margin-top: u.rem(5);
+          border-bottom: 2px solid var(--White);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}

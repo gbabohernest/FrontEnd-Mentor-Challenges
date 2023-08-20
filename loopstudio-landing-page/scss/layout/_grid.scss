@@ -1,0 +1,35 @@
+@use "../utils/" as u;
+
+.creations-grid {
+  display: grid;
+
+  @include u.breakpoints-up(large) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  gap: u.rem(25);
+}
+
+.virtual-reality {
+  @include u.breakpoints-up(large) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.nav-footer__grid {
+  @include u.breakpoints-up(large) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 75px;
+    grid-template-areas: "left-items right-items";
+    gap: 47%;
+  }
+
+  div.left-items {
+    grid-area: left-items;
+  }
+
+  div.right-items {
+    grid-area: right-items;
+  }
+}

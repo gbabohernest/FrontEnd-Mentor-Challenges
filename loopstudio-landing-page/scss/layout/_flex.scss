@@ -1,0 +1,41 @@
+@use "../utils/" as u;
+
+.nav {
+  @include u.flex(row, space-between);
+
+  &__list {
+    @include u.flex(row, center);
+
+    &-items {
+      color: var(--White);
+      &:not(:last-child) {
+        margin-right: u.rem(20);
+      }
+    }
+  }
+}
+
+.creations {
+  &-flex {
+    @include u.breakpoints-up(large) {
+      @include u.flex(row, space-between);
+    }
+    margin-bottom: u.rem(35);
+  }
+}
+
+.nav-footer {
+  .list {
+    ul {
+      @include u.breakpoints-up(large) {
+        display: flex;
+
+        li {
+          &:not(:first-child) {
+            padding-left: u.rem(15);
+          }
+        }
+      }
+    }
+  }
+}
