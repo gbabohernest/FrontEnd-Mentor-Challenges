@@ -1,0 +1,83 @@
+html {
+  font-size: 0.9375rem;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --white-bg: hsl(0, 0%, 100%);
+  --bckground: hsl(212, 45%, 89%);
+  --card-background: hsl(0, 0%, 100%);
+  --heading-color: hsl(218, 44%, 22%);
+  --f-family: 'Outfit', sans-serif;
+  --p-color: hsl(220, 15%, 55%);
+}
+
+body {
+  background-color: var(--bckground);
+  font-family: var(--f-family);
+}
+
+a {
+  text-decoration: none;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 300px;
+  background-color: var(--white-bg);
+  align-self: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.img-div {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.345rem;
+  line-height: 1.8rem;
+  color: var(--heading-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--p-color);
+  font-size: 0.95rem;
+  line-height: 1.37rem;
+  margin-bottom: 1.2rem;
+}
+
+footer {
+  font-size: 0.78rem;
+  text-align: center;
+  padding: 0.5rem;
+}
