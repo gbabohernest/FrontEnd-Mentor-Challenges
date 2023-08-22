@@ -1,0 +1,178 @@
+html {
+  font-size: 1.125rem;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --Soft_blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  --Very_dark_blue_mg: hsl(217, 54%, 11%); /*(main BG)*/
+  --Very_dark_blue_cb: hsl(216, 50%, 16%); /*(card BG)*/
+  --Very_dark_blue: hsl(215, 32%, 27%); /*(line) */
+  --White: hsl(0, 0%, 100%);
+
+  --card-paddingX: 1rem;
+  --card-padding-top: 0.9rem;
+  --card-padding-bottom: 1.3rem;
+}
+
+body {
+  background-color: var(--Very_dark_blue_mg);
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  width: min(100%, 350px);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3125rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.8125rem;
+  cursor: pointer;
+}
+
+h1:hover {
+  color: var(--Cyan);
+}
+
+p {
+  font-weight: 300;
+  color: var(--Soft_blue);
+  margin-bottom: 0.8125rem;
+}
+
+.card {
+  width: 350px;
+  background-color: var(--Very_dark_blue_cb);
+  margin-top: 1.5rem;
+  margin-bottom: 1.3rem;
+  padding: var(--card-padding-top) var(--card-paddingX)
+    var(--card-padding-bottom);
+  border-radius: 1rem;
+}
+
+.card {
+  box-shadow: 0 0 10px 25px hsla(216, 50%, 16%, 0.3);
+}
+
+.card-body {
+  color: var(--White);
+}
+
+.img-container {
+  width: 100%;
+  border-radius: 0.8rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-container::after {
+  width: 100%;
+  --aqua: hsla(178, 100%, 50%, 0.5);
+  content: url(/images/icon-view.svg);
+  background: var(--aqua);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.25s ease;
+  z-index: 1;
+}
+
+.img-container:hover::after {
+  opacity: 1;
+}
+
+img[alt='Equilibrium'] {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-ethereum {
+  color: var(--Cyan);
+  display: flex;
+  align-items: center;
+}
+.clock {
+  display: flex;
+  align-items: center;
+  color: var(--Soft_blue);
+}
+hr {
+  color: var(--Very_dark_blue);
+  margin: 0.9rem 0;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  font-size: 0.89rem;
+}
+.creation {
+  color: var(--Soft_blue);
+  margin-left: 0.4rem;
+}
+
+.avatar img {
+  width: 15%;
+  border-radius: 100%;
+  border: 1px solid var(--White);
+}
+
+span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-left: 0.5rem;
+}
+
+span.jules:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+footer {
+  font-size: 0.6875rem;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
