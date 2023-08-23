@@ -1,6 +1,6 @@
 html {
   font-size: 0.8125rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 *,
@@ -26,6 +26,12 @@ html {
 
 body {
   background-color: var(--Light_grayish_blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 20px;
 }
 
 a {
@@ -63,7 +69,9 @@ p.review {
 }
 
 main {
-  margin-top: 3.875rem;
+  /* margin-top: 3.875rem; */
+  width: min(100%, 1200px);
+  margin-inline: auto;
   display: grid;
   gap: 20px;
   padding: 0 1.5rem;
@@ -71,8 +79,8 @@ main {
 
 @media screen and (min-width: 800px) {
   main {
-    max-width: 1200px;
-    margin: 3.875rem auto;
+    /* max-width: 1200px; */
+    /* margin: 3.875rem auto; */
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -109,21 +117,21 @@ img {
   border-radius: 100px;
 }
 
-img[alt="Daniel"] {
+img[alt='Daniel'] {
   border: 1px solid var(--Moderate_violet);
 }
 
-img[alt="Walters"] {
+img[alt='Walters'] {
   border: 1px solid var(--White);
 }
-img[alt="Harmon"] {
+img[alt='Harmon'] {
   border: 1px solid var(--White);
 }
-img[alt="Abrams"] {
+img[alt='Abrams'] {
   border: 2px solid var(--Moderate_violet);
 }
 
-img[alt="Kira"] {
+img[alt='Kira'] {
   border: 1px solid var(--White);
 }
 
