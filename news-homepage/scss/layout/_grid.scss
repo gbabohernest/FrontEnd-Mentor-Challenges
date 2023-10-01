@@ -1,0 +1,75 @@
+@use "../utils/" as u;
+
+.grid {
+  display: grid;
+  gap: u.rem(25);
+
+  @include u.breakpoints-up(large) {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &__item:first-child {
+    margin-bottom: u.rem(20);
+  }
+
+  &__item:nth-child(2) {
+    background-color: var(--Very-dark-blue);
+    padding: u.rem(25) u.rem(25) u.rem(12);
+    margin-top: u.rem(20);
+
+    @include u.breakpoints-up(large) {
+      margin-top: 0;
+    }
+
+    .content {
+      border-bottom: 1px solid var(--Dark-grayish-blue);
+      margin-top: u.rem(30);
+
+      h3 {
+        padding-bottom: u.rem(7);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: var(--soft-orange);
+          cursor: pointer;
+        }
+      }
+
+      p {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .content:last-child > p {
+      margin-bottom: 0;
+    }
+
+    .content:first-child {
+      margin-top: u.rem(35);
+    }
+  }
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: u.rem(40);
+
+  // margin-bottom: u.rem(15);
+
+  @include u.breakpoints-up(large) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: u.rem(15);
+  }
+
+  h4 {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: var(--soft-red);
+      cursor: pointer;
+    }
+  }
+}

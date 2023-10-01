@@ -1,0 +1,111 @@
+@use "../utils/" as u;
+
+.flex-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: u.rem(50);
+
+  &__desktop {
+    display: none;
+    a {
+      padding-right: u.rem(30);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--soft-red);
+        cursor: pointer;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    @include u.breakpoints-up(medium) {
+      display: block;
+    }
+  }
+
+  &__mobile {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 60vw;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--off-white);
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 25%;
+      transform: translateY(-25%);
+    }
+  }
+}
+
+.close {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+.flex-container {
+  display: flex;
+  gap: u.rem(20);
+
+  @include u.breakpoints-up(large) {
+    align-items: center;
+  }
+
+  &__img-container {
+    // width: u.rem(150);
+
+    img {
+      width: 100px;
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    span {
+      color: var(--Grayish-blue);
+      font-size: u.rem(30);
+      font-weight: bold;
+    }
+    p {
+      margin: u.rem(10) 0 0;
+      @include u.breakpoints-up(large) {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.flex {
+  margin-top: u.rem(20);
+  &__desc {
+    p {
+      margin-bottom: 0;
+      padding-bottom: u.rem(30);
+    }
+  }
+  @include u.breakpoints-up(large) {
+    display: flex;
+    gap: u.rem(20);
+
+    margin-top: 0;
+  }
+
+  @include u.breakpoints-up(large) {
+    &__heading {
+      margin: u.rem(20) 0 0;
+    }
+  }
+}
