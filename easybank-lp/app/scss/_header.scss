@@ -1,0 +1,111 @@
+.header {
+  &.openHamburgerMenu {
+    .header__toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient($Dark_Blue, transparent);
+  }
+
+  nav {
+    position: relative;
+    background: $White;
+    padding: 1.0625rem 1.5rem;
+  }
+
+  &__logo {
+    img {
+      width: 8.8125rem;
+      height: 1.375rem;
+
+      @include break-points-up(large) {
+        // padding-left: 30px;
+      }
+    }
+  }
+
+  &__toggle {
+    // mobile menu toggle
+
+    > span {
+      display: block;
+      width: 20px;
+      height: 1px;
+      background-color: $Dark_Blue;
+      transition: all 300ms ease-in-out;
+      transform-origin: 0.125rem 0.0625rem;
+
+      &:not(:last-child) {
+        margin-bottom: 0.3125rem;
+      }
+    }
+  }
+
+  &__mobile_menu {
+    position: absolute;
+    width: calc(100% - 2.875rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background: $White;
+    margin-top: 1.5rem;
+    padding: 0.8125rem 0;
+    border-radius: 0.3125rem;
+    z-index: 10;
+
+    a {
+      display: block;
+      padding: 0.625rem;
+      color: $Dark_Blue;
+      text-align: center;
+    }
+  }
+  &__links {
+    a {
+      font-size: $font-small;
+      position: relative;
+      color: $Grayish_Blue;
+      transition: color 300ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 3px;
+        left: 0;
+        right: 0;
+        bottom: -25px;
+        margin-bottom: 0.3rem;
+        background: linear-gradient(to right, $Lime_Green, $Bright_Cyan);
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+      &:hover {
+        color: $Dark_Blue;
+
+        &::before {
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+}
