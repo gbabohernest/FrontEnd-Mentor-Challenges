@@ -1,0 +1,45 @@
+@use "../utils/" as u;
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  font-family: var(--headings-font);
+  color: var(--very_light_gray);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: clamp(100%, u.rem(45), u.rem(50));
+  line-height: 1.1;
+  margin-bottom: u.rem(15);
+  padding-inline: u.rem(24);
+}
+h2 {
+  font-size: clamp(100%, u.rem(45), u.rem(50));
+}
+
+h3 {
+  font-size: clamp(100%, u.rem(27), u.rem(33));
+}
+h2,
+h3 {
+  color: var(--dark_violet);
+}
+p {
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+.spacing {
+  @include u.breakpoints-up(large) {
+    font-size: u.rem(13);
+    padding-inline: 0;
+    opacity: 1;
+  }
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--very_light_gray);
+}

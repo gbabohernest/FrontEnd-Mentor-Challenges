@@ -1,0 +1,31 @@
+@use "../utils/" as u;
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-flow: column wrap;
+  gap: u.rem(130);
+  font-family: var(--body-font);
+}
+
+ul {
+  list-style-type: none;
+}
+.center {
+  width: min(100% - u.rem(40), u.rem(1000));
+  margin-inline: auto;
+}
+
+.spacing {
+  padding-inline: u.rem(29.008);
+}
