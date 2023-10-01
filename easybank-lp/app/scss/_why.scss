@@ -1,0 +1,46 @@
+.why {
+  background-color: $Very_Light-Gray;
+  padding: 20px 20px;
+  text-align: center;
+
+  &__description {
+    @include break-points-up(large) {
+      width: 400px;
+      padding-left: 30px;
+    }
+  }
+
+  @include break-points-up(large) {
+    text-align: left;
+    padding-left: 36px;
+  }
+
+  h2 {
+    color: $Dark_Blue;
+    font-weight: 300;
+    padding: 0 25px;
+    line-height: 1.2;
+  }
+  p {
+    font-size: $font-small-medium;
+  }
+  &__reason {
+    padding: 1rem 0 0;
+    h3 {
+      font-size: 1rem;
+      color: $Dark_Blue;
+      font-weight: 300;
+    }
+    img {
+      margin-bottom: 11px;
+    }
+  }
+  .flex-container {
+    @include break-points-up(large) {
+      display: flex;
+      gap: 20px;
+      text-align: left;
+      overflow: hidden;
+    }
+  }
+}

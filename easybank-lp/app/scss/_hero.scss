@@ -1,0 +1,110 @@
+.hero {
+  background-color: $White;
+  overflow: hidden;
+
+  .container {
+    @include break-points-up(large) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__image {
+    position: relative;
+    background-image: url("/images/bg-intro-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 17.5rem;
+
+    @include break-points-up(large) {
+      flex: 3;
+      order: 2;
+      height: 41.5625rem; //665px
+      background-image: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      background-size: 86%;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+
+      @include break-points-up(large) {
+        width: 1250px;
+        // width: 150%;
+        background-image: url("/images/bg-intro-desktop.svg");
+        background-size: 92%;
+        background-position: 71% 93%;
+
+        // fixed
+        // width: 1250px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url("/images/image-mockups.png");
+      // background-size: 86%;
+      background-size: 322px;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+
+      @include break-points-up(large) {
+        width: 846px;
+        height: 110%;
+
+        background-size: 83%;
+        background-repeat: no-repeat;
+        background-position: center 87%;
+        left: 22%;
+      }
+    }
+  }
+
+  &__textual-contents {
+    text-align: center;
+    margin-top: 2.688rem;
+
+    @include break-points-up(large) {
+      flex: 2;
+      order: 1;
+      text-align: left;
+    }
+    h1 {
+      font-weight: 300;
+      font-size: 2.31rem;
+      line-height: 1.15;
+      color: $Dark_Blue;
+      padding: 0 1.7rem 0;
+      margin-bottom: 0.625rem;
+
+      @include break-points-up(large) {
+        font-size: $font-xlarge;
+        padding-left: 2rem;
+      }
+    }
+
+    p {
+      line-height: 1.5;
+      margin-bottom: 2.25rem;
+      padding: 0 1.7rem 0;
+
+      @include break-points-up(large) {
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  &__cta-btn {
+    @include break-points-up(large) {
+      margin-left: 2rem;
+    }
+  }
+}
