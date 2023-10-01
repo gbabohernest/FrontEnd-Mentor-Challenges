@@ -1,0 +1,98 @@
+.easybank_footer {
+  background-color: $Dark_Blue;
+  color: $Grayish_Blue;
+  font-weight: 300;
+  font-size: $font-small-medium;
+  padding: 1rem 0 1rem;
+
+  // @include break-points-up(large) {
+  //   // text-align: left;
+  // }
+
+  &__flex-container {
+    padding: 24px 13px 0;
+
+    @include break-points-up(large) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo_social {
+      margin-top: 0.7rem;
+      cursor: pointer;
+
+      .logo {
+        text-align: center;
+        margin-bottom: 1.5rem;
+
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+
+      .social {
+        margin-left: 1rem;
+        margin-bottom: 0.6rem;
+        text-align: center;
+
+        @include break-points-up(large) {
+          margin-top: 15px;
+        }
+
+        a {
+          padding: 8px;
+        }
+      }
+    }
+    //logo-social end
+
+    //links
+    .__links {
+      text-align: center;
+
+      @include break-points-up(large) {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+
+        .first {
+          margin-right: 100px;
+        }
+      }
+
+      .first,
+      .second {
+        a {
+          display: block;
+          padding: 15px 0 5px;
+
+          &:hover {
+            color: $Lime_Green;
+          }
+        }
+      }
+      a {
+        color: $White;
+      }
+    }
+    //links end
+
+    .btn-copyright {
+      text-align: center;
+
+      .footer__cta-btn {
+        width: 150px;
+      }
+    } //bnt-copyright end
+  } //flex-container end
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  .attribution a {
+    color: $Lime_Green;
+  }
+}
