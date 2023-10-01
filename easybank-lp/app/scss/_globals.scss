@@ -1,0 +1,100 @@
+htm {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: $font-medium;
+  font-weight: 300;
+  color: $Grayish_Blue;
+  line-height: 1.6;
+
+  @include break-points-up(large) {
+    font-size: $font-medium;
+  }
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+//spacing
+.container {
+  padding-bottom: 2.25rem;
+}
+
+.padding_all {
+  @include break-points-up(large) {
+    // padding-left: 30px;
+    margin-left: 30px;
+  }
+}
+
+//flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+// buttons
+.button {
+  display: inline-block;
+  padding: 0.5rem 1.345rem;
+  background: linear-gradient(to right, $Lime_Green, $Bright_Cyan);
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  color: $White;
+  font-weight: 400;
+  font-size: $font-small;
+  transition: opacity 300ms ease-in-out;
+
+  &:hover {
+    opacity: 0.65;
+  }
+}
+
+// menu visibility
+.hide-for-mobile {
+  //tablet & mobile
+  @include break-points-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  //hide for desktop viewport
+  @include break-points-up(large) {
+    display: none;
+  }
+}
