@@ -10,4 +10,4 @@
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://fem0-profile-card.vercel.app/)
+- Live Site URL: [profile-card](https://fem0-profile-card.vercel.app/)

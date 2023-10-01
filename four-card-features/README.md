@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [Add live site URL here](https://fem-four-card-features.netlify.app/)
+- Live Site URL: [fem-four-card](https://fem-four-card-features.netlify.app/)
 
 ## My process
 
@@ -38,12 +38,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
 ## Author
 

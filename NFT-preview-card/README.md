@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://nft-card-app.netlify.app/)
+- Live Site URL: [nft-card-app](https://nft-card-app.netlify.app/)
 
 ## My process
 

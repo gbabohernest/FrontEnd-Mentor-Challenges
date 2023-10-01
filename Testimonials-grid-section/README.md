@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [live site URL here](https://fem-testimonials-grid-app.netlify.app/)
+- Live Site URL: [fem-testimonials-grid](https://fem-testimonials-grid-app.netlify.app/)
 
 ## My process
 

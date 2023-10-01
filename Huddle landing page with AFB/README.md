@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [Add live site URL here](https://fem-huddle-afb.netlify.app/)
+- Live Site URL: [fem-huddle-afb](https://fem-huddle-afb.netlify.app/)
 
 ## My process
 

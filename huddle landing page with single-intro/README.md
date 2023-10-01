@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [Add live site URL here](https://fem-huddle-page.netlify.app/)
+- Live Site URL: [fem-huddle-page](https://fem-huddle-page.netlify.app/)
 
 ## My process
 
