@@ -1,0 +1,28 @@
+//651px 900px 1220px
+
+//mobile max-width: 600px;
+//tablet max-width: 768px;
+//laptop max-width: 992px;
+//large screen max-width: 1200px;
+$breakPointUp: (
+  'medium': 40.6875em,
+  'large': 56.25em,
+  // "x-large": 76.25em,
+  'x-large': 75em,
+);
+//650px 899px
+$breakPointDown: (
+  'small': 40.625em,
+  'medium': 56.1875em,
+);
+
+@mixin break-point-up($size) {
+  @media (min-width: map-get($breakPointUp, $size)) {
+    @content;
+  }
+}
+@mixin break-point-down($size) {
+  @media (max-width: map-get($breakPointDown, $size)) {
+    @content;
+  }
+}

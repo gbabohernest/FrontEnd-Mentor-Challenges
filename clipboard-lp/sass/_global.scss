@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $font-size;
+  font-family: $f-family;
+  line-height: 1.2;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+h2 {
+  color: $dark-grayish-blue;
+  padding: 0 1.5625rem;
+}
+
+.img-container {
+  width: 150px;
+  padding: 4rem 0 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    width: 80px;
+    object-fit: contain;
+  }
+}
+
+.text-content {
+  text-align: center;
+  color: $grayish-blue;
+  padding: 0.3125rem 0.875rem 0.9375rem;
+  line-height: 1.5;
+}
+
+.btn {
+  button {
+    color: #fff;
+    margin: 0 0.5rem;
+    border: none;
+    padding: 0.9375rem 4.6875rem;
+    font-size: $font-size;
+    cursor: pointer;
+  }
+  @include break-point-down(small) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+}
+
+.btn-ios {
+  background-color: $strong-cyan;
+  border-radius: 3rem;
+}
+.btn-mac {
+  background-color: $light-blue;
+  border-radius: 3rem;
+}
