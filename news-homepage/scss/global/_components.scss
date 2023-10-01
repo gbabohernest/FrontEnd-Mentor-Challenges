@@ -1,0 +1,70 @@
+@use '../utils/' as u;
+
+.center {
+  width: min(100% - u.rem(40), u.rem(1000));
+  margin-inline: auto;
+}
+
+header {
+  margin: u.rem(14) 0;
+}
+
+.hide-for-desktop {
+  z-index: 99;
+  cursor: pointer;
+
+  @include u.breakpoints-up(medium) {
+    display: none;
+  }
+}
+
+.info {
+  margin-top: u.rem(35);
+}
+.nav-img-container {
+  width: u.rem(40);
+
+  @include u.breakpoints-up(large) {
+    width: u.rem(60);
+  }
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+picture {
+  width: u.rem(300);
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+a.read-more {
+  background-color: var(--soft-red);
+  text-transform: uppercase;
+  font-size: u.rem(12);
+  font-weight: bold;
+  padding: u.rem(11) u.rem(30);
+  color: var(--off-white);
+  letter-spacing: u.rem(2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--Very-dark-blue);
+  }
+}
+
+.attribution {
+  font-size: u.rem(11);
+  text-align: center;
+  margin-top: u.rem(12);
+  padding: u.rem(12) u.rem(10) u.rem(15);
+}
+.attribution a {
+  // color: hsl(228, 45%, 44%);
+  color: var(--soft-red);
+}

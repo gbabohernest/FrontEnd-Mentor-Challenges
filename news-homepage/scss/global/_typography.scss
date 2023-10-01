@@ -1,0 +1,40 @@
+@use "../utils/" as u;
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  // font-size: 35px;
+  font-size: clamp(u.rem(28), u.rem(15) + 2vw, u.rem(40));
+  font-weight: 800;
+  color: var(--Very-dark-blue);
+  line-height: 1;
+}
+h2 {
+  // font-size: 30px;
+  color: var(--soft-orange);
+  font-size: clamp(u.rem(22), u.rem(16) + 1.5vw, u.rem(36));
+}
+
+h3 {
+  color: var(--off-white);
+}
+h4 {
+  font-weight: bold;
+  // font-size: px;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--Very-dark-blue);
+}
+
+p {
+  color: var(--Dark-grayish-blue);
+  line-height: 1.7;
+}

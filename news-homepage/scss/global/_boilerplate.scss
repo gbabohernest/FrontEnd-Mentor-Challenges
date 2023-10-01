@@ -1,0 +1,35 @@
+@use '../utils/' as u;
+html {
+  box-sizing: border-box;
+  font-size: u.rem(15);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  padding: 0;
+  cursor: pointer;
+  li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    padding-inline: 2rem;
+    // font-weight: bold;
+    font-size: u.rem(17);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--soft-red);
+    }
+  }
+}
+
+body {
+  background-color: var(--off-white);
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
