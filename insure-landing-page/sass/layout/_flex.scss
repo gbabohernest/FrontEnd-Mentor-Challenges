@@ -1,0 +1,126 @@
+@use "../utils/" as u;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: u.rem(20);
+
+  a {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: var(--very_dark_violet);
+    }
+  }
+}
+
+.showcase {
+  &__wrapper {
+    @include u.breakpoints-up(large) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: u.rem(30);
+
+      padding-top: u.rem(30);
+      width: min(100% - u.rem(40), u.rem(1000));
+      margin-inline: auto;
+    }
+  }
+}
+
+.different {
+  &__flex {
+    @include u.breakpoints-up(large) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: u.rem(30);
+    }
+  }
+}
+
+.find-out-more {
+  &__flex {
+    @include u.breakpoints-up(large) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+
+      padding-inline: u.rem(35);
+      h2 {
+        font-size: u.rem(40);
+        max-inline-size: u.rem(340);
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+.footer-nav {
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column wrap;
+
+    margin-top: u.rem(88);
+
+    @include u.breakpoints-up(large) {
+      flex-flow: row;
+    }
+
+    &-social-links {
+      margin: u.rem(30) 0;
+      cursor: pointer;
+
+      img {
+        margin-right: u.rem(18);
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &:first-of-type {
+      border-bottom: 1px solid hsla(270, 9%, 17%, 0.2);
+    }
+  }
+
+  &__flex-item {
+    text-align: center;
+    font-size: u.rem(11);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: u.rem(35);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-headings {
+      color: var(--dark_grayish_violet);
+      font-size: u.rem(13);
+    }
+
+    ul {
+      margin-top: u.rem(18);
+      font-size: u.rem(12);
+      cursor: pointer;
+      li {
+        letter-spacing: u.rem(1);
+        color: var(--very_dark_violet);
+        padding-bottom: u.rem(13);
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
