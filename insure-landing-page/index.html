@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css file -->
+    <link rel="stylesheet" href="./sass/dist/css/style.min.css" />
+    <title>Frontend Mentor | Insure landing page</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav center">
+        <div class="nav__logo">
+          <img src="images/logo.svg" alt="insure logo" />
+        </div>
+        <div class="nav__hide-for-desktop hamburger-menu">
+          <img src="images/icon-hamburger.svg" alt="hamburger menu icon" />
+          <img
+            src="images/icon-close.svg"
+            class="close-menu"
+            alt="close hamburger menu icon"
+          />
+        </div>
+        <div class="nav__hide-for-mobile">
+          <a href="#"> How we work</a>
+          <a href="#">Blog </a>
+          <a href="#">Account</a>
+          <a href="#" class="btn"> View plans</a>
+        </div>
+        <div class="nav__mobile_links close-menu">
+          <nav>
+            <ul>
+              <li>How we work</li>
+              <li>Blog</li>
+              <li>Account</li>
+              <li>View plans</li>
+            </ul>
+          </nav>
+
+          <img src="images/bg-pattern-mobile-nav.svg" alt="nav-gb-patter" />
+        </div>
+      </nav>
+      <div class="showcase">
+        <div class="showcase__wrapper">
+          <div class="showcase__imgs">
+            <img
+              src="images/image-intro-mobile.jpg"
+              alt="A family of four walking happily"
+              class="mobile-img"
+            />
+            <img
+              src="images/image-intro-desktop.jpg"
+              alt="A family of four walking happily"
+              class="desktop-img"
+            />
+          </div>
+
+          <div class="showcase__header">
+            <img
+              src="images/bg-pattern-intro-left-mobile.svg"
+              class="mobile-bg-pattern-left"
+              alt="background pattern"
+            />
+            <img
+              src="images/bg-pattern-intro-left-desktop.svg"
+              class="desktop-bg-pattern-left"
+              alt="background pattern"
+            />
+            <div class="underline_desktop"></div>
+            <h1>Humanizing your insurance.</h1>
+            <p class="spacing">
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that’s right
+              for you. Ensure you and your loved ones are protected.
+            </p>
+            <a href="#" class="btn"> View plans</a>
+            <img
+              src="images/bg-pattern-intro-right-mobile.svg"
+              class="mobile-bg-pattern-right"
+              alt="background pattern"
+            />
+            <img
+              src="images/bg-pattern-intro-right-desktop.svg"
+              class="desktop-bg-pattern-right"
+              alt="background pattern"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="center">
+      <section class="different">
+        <div class="underline"></div>
+        <h2>We're different</h2>
+
+        <div class="different__flex">
+          <div class="different__flex-item">
+            <img src="images/icon-snappy-process.svg" alt="speed icon" />
+            <h3>Snappy Process</h3>
+            <p class="spacing">
+              Our application process can be completed in minutes, not hours.
+              Don’t get stuck filling in tedious forms.
+            </p>
+          </div>
+          <!-- end -->
+          <div class="different__flex-item">
+            <img
+              src="images/icon-affordable-prices.svg"
+              alt="dollar sign icon"
+            />
+            <h3>Affordable Prices</h3>
+            <p class="spacing">
+              We don’t want you worrying about high monthly costs. Our prices
+              may be low, but we still offer the best coverage possible.
+            </p>
+          </div>
+          <!-- end -->
+          <div class="different__flex-item">
+            <img src="images/icon-people-first.svg" alt="person icon" />
+            <h3>People First</h3>
+            <p class="spacing">
+              Our plans aren’t full of conditions and clauses to prevent
+              payouts. We make sure you’re covered when you need it.
+            </p>
+          </div>
+          <!-- end -->
+        </div>
+      </section>
+    </main>
+    <section class="find-out-more center">
+      <div class="find-out-more__flex">
+        <h2>Find out more about how we work</h2>
+        <a href="#" class="btn">How we work</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-nav center">
+        <img
+          src="images/bg-pattern-footer-mobile.svg"
+          class="bg-footer-mobile"
+          alt=""
+        />
+        <img
+          src="images/bg-pattern-footer-desktop.svg"
+          class="bg-footer-desktop"
+          alt=""
+        />
+        <div class="footer-nav__flex">
+          <img src="images/logo.svg" alt="insure logo" />
+          <div class="footer-nav__flex-social-links">
+            <img src="images/icon-facebook.svg" alt="facebook logo" />
+            <img src="images/icon-twitter.svg" alt="twitter logo" />
+            <img src="images/icon-pinterest.svg" alt="pinterest logo" />
+            <img src="images/icon-instagram.svg" alt="instagram logo" />
+          </div>
+        </div>
+
+        <div class="footer-nav__flex">
+          <div class="footer-nav__flex-item">
+            <p class="footer-nav__flex-item-headings">Our company</p>
+            <ul>
+              <li>How we work</li>
+              <li>Why Insure?</li>
+              <li>check price</li>
+              <li>Reviews</li>
+            </ul>
+          </div>
+          <!-- end -->
+
+          <div class="footer-nav__flex-item">
+            <p class="footer-nav__flex-item-headings">Help me</p>
+            <ul>
+              <li>FAQ</li>
+              <li>Terms of use</li>
+              <li>Privacy policy</li>
+              <li>Cookies</li>
+            </ul>
+          </div>
+          <!-- end -->
+
+          <div class="footer-nav__flex-item">
+            <p class="footer-nav__flex-item-headings">Contact</p>
+            <ul>
+              <li>Sales</li>
+              <li>Support</li>
+              <li>Live chat</li>
+            </ul>
+          </div>
+          <!-- end -->
+
+          <div class="footer-nav__flex-item">
+            <p class="footer-nav__flex-item-headings">Others</p>
+            <ul>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Licenses</li>
+            </ul>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/gbabohernest" target="_blank"
+          >Ernest Push Gbaboh</a
+        >.
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
