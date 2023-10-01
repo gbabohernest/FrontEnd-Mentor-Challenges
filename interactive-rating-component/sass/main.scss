@@ -1,0 +1,134 @@
+@import 'reset';
+@import 'variables';
+
+body {
+  background-color: $very_dark_blue;
+  color: $white;
+  font-family: 'Overpass', sans-serif;
+  font-size: 0.9375rem;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+p {
+  color: $light_grey;
+}
+
+a {
+  text-decoration: none;
+  color: $orange;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.3rem;
+}
+
+.card {
+  background-color: $dark_blue;
+  width: 350px;
+  margin-top: 150px;
+  padding: $paddingY $paddingX;
+  border-radius: 0.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.card-top {
+  padding: 1.5rem 0 2rem;
+  line-height: 1.5;
+}
+
+h1 {
+  color: $white;
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.card-top-img {
+  margin-bottom: 0.7rem;
+  img {
+    background-color: $Medium_Grey;
+    // opacity: 0.8;
+    padding: 0.7rem;
+    border-radius: 50%;
+  }
+}
+
+.card-button {
+  .ratings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.7rem;
+
+    .rating-btn {
+      color: $light_grey;
+      border: none;
+      background-color: $Medium_Grey;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $orange;
+        color: $white;
+      }
+    }
+    .active {
+      background-color: $light_grey;
+      color: $white;
+    }
+  }
+  .submit-btn {
+    width: 100%;
+    text-transform: uppercase;
+    color: $white;
+    border: none;
+    background-color: $orange;
+    border-radius: 3rem;
+    padding: 0.9rem;
+    font-weight: map-get($font_weight, bold);
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white;
+      color: $orange;
+    }
+  }
+}
+
+.card-thank-you-state {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .top {
+    margin-bottom: 1.4rem;
+    text-align: center;
+
+    img {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.rating-msg {
+  background-color: $Medium_Grey;
+  color: $orange;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3rem;
+  margin: 1.5rem 0 1.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
